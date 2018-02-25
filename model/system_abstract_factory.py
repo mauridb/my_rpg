@@ -17,6 +17,12 @@ from model.core.outgame.instrument.instruments_factory import (
 	WarRoomFactory,
 	ClanWarRoomFactory,
 	)
+from model.core.outgame.rule.character.character_factory import CharacterFactory
+from model.core.outgame.rule.enemy.enemy_factory import EnemyFactory
+from model.core.outgame.rule.enemy.boss.boss_factory import BossFactory
+from model.core.outgame.rule.equipement.equipement_factory import EquipementFactory
+from model.core.outgame.rule.equipement.spell.spell_factory import SpellFactory
+
 
 class DeDSystem(object):
 
@@ -25,6 +31,7 @@ class DeDSystem(object):
 
 	def show_object_factory(self):
 		obj = self.factory().get_object()
+		# print(obj)
 		obj_id = obj.get_object_id()
 		print("OBJECT: ", obj)
 		print("OBJECT ID: ", obj_id)
@@ -46,5 +53,10 @@ def get_factory():
 		D10Factory,
 		D12Factory,
 		D20Factory,
-		DRateFactory
+		DRateFactory,
+		CharacterFactory,
+		EnemyFactory,
+		BossFactory,
+		EquipementFactory,
+		SpellFactory
 		])
