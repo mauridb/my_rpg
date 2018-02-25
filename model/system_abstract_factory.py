@@ -1,9 +1,22 @@
 import random
 
 from model.core.game_factory import (
-		IngameFactory,
+	IngameFactory,
+	OutgameFactory
 	)
-
+from model.core.outgame.instrument.instruments_factory import (
+	D4Factory,
+	D6Factory,
+	D8Factory,
+	D10Factory,
+	D12Factory,
+	D20Factory,
+	DRateFactory,
+	SingleMissionRoomFactory,
+	CampaignRoomFactory,
+	WarRoomFactory,
+	ClanWarRoomFactory,
+	)
 
 class DeDSystem(object):
 
@@ -21,5 +34,17 @@ class DeDSystem(object):
 def get_factory():
 
 	return random.choice([
-			IngameFactory,
+		IngameFactory,
+		OutgameFactory,
+		SingleMissionRoomFactory,
+		CampaignRoomFactory,
+		WarRoomFactory,
+		ClanWarRoomFactory,
+		D4Factory,
+		D6Factory,
+		D8Factory,
+		D10Factory,
+		D12Factory,
+		D20Factory,
+		DRateFactory
 		])

@@ -6,6 +6,8 @@ def main():
 		ded = DeDSystem(get_factory())
 		ded.show_object_factory()
 
+	# TODO: if Outgame: def preparing() elif Ingame beginning()
+
 
 if __name__ == '__main__':
 	main()
