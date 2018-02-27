@@ -22,6 +22,8 @@ from model.core.outgame.rule.enemy.enemy_factory import EnemyFactory
 from model.core.outgame.rule.enemy.boss.boss_factory import BossFactory
 from model.core.outgame.rule.equipement.equipement_factory import EquipementFactory
 from model.core.outgame.rule.equipement.spell.spell_factory import SpellFactory
+from model.core.outgame.user.user_factory import UserFactory
+from model.core.outgame.user.auth.authentication_factory import AuthenticationFactory
 
 
 class DeDSystem(object):
@@ -41,22 +43,24 @@ class DeDSystem(object):
 def get_factory():
 
 	return random.choice([
-		IngameFactory,
-		OutgameFactory,
-		SingleMissionRoomFactory,
-		CampaignRoomFactory,
-		WarRoomFactory,
-		ClanWarRoomFactory,
-		D4Factory,
-		D6Factory,
-		D8Factory,
-		D10Factory,
-		D12Factory,
-		D20Factory,
-		DRateFactory,
-		CharacterFactory,
-		EnemyFactory,
-		BossFactory,
-		EquipementFactory,
-		SpellFactory
+		# IngameFactory,
+		# OutgameFactory,
+		# SingleMissionRoomFactory,
+		# CampaignRoomFactory,
+		# WarRoomFactory,
+		# ClanWarRoomFactory,
+		# D4Factory,
+		# D6Factory,
+		# D8Factory,
+		# D10Factory,
+		# D12Factory,
+		# D20Factory,
+		# DRateFactory,
+		# CharacterFactory,
+		# EnemyFactory,
+		# BossFactory,
+		# EquipementFactory,
+		# SpellFactory,
+		# UserFactory,
+		AuthenticationFactory
 		])
