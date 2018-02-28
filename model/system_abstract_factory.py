@@ -24,6 +24,8 @@ from model.core.outgame.rule.equipement.equipement_factory import EquipementFact
 from model.core.outgame.rule.equipement.spell.spell_factory import SpellFactory
 from model.core.outgame.user.user_factory import UserFactory
 from model.core.outgame.user.auth.authentication_factory import AuthenticationFactory
+from model.core.outgame.user.registration.registration_factory import RegistrationFactory
+from model.core.outgame.user.login.login_factory import LoginFactory
 
 
 class DeDSystem(object):
@@ -62,5 +64,7 @@ def get_factory():
 		# EquipementFactory,
 		# SpellFactory,
 		# UserFactory,
-		AuthenticationFactory
+		# AuthenticationFactory,
+		RegistrationFactory,
+		LoginFactory
 		])
