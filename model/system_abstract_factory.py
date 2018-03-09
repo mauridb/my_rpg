@@ -26,6 +26,7 @@ from model.core.outgame.user.user_factory import UserFactory
 from model.core.outgame.user.auth.authentication_factory import AuthenticationFactory
 from model.core.outgame.user.registration.registration_factory import RegistrationFactory
 from model.core.outgame.user.login.login_factory import LoginFactory
+from model.core.outgame.story.story_factory import StoryFactory
 
 
 class DeDSystem(object):
@@ -65,6 +66,7 @@ def get_factory():
 		# SpellFactory,
 		# UserFactory,
 		# AuthenticationFactory,
-		RegistrationFactory,
-		LoginFactory
+		# RegistrationFactory,
+		# LoginFactory,
+		StoryFactory
 		])
